@@ -11,7 +11,7 @@
 
     <form>
       <fieldset>
-        <label>아이디: <input type="text" id="user_id" size="10" /></label>
+        <label> 아이디: <input type="text" id="user_id" size="10" /> </label>
         <label
           >비밀번호 <input type="password" id="uswe_pwd" size="10"
         /></label>
@@ -34,6 +34,65 @@
 
     <div>
       <input type="tel" placeholder="전화번호" />
+    </div>
+
+    <div>
+      <form action="serch.php" method="post" autocomplete="off">
+        <input type="text" title="검색" />
+        <input type="submit" value="검색" />
+      </form>
+    </div>
+
+    <div>
+      <ul>
+        <li>
+          <label><input type="checkbox" value="grm" />문법</label>
+        </li>
+        <li>
+          <label><input type="checkbox" value="wr" />작문</label>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <form>
+        <ul>
+          <li>
+            <label
+              ><input type="radio" name="subject" value="eng" />영어회화</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="radio" name="subject" value="ch" />중국어회화</label
+            >
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <div>
+      <form>
+        <fieldset>
+          <legend>개인 정보</legend>
+          <ul>
+            <li>
+              <label for="name">이름</label>
+              <input type="text" id="name" />
+            </li>
+            <li>
+              <label for="mail">메일주소</label>
+              <input type="email" id="mail" />
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+
+    <div>
+      <b>주문 개수 : </b><input type="number" min="1" max="5" value="1" /> 개
+      <br />
+      <b>주문 개수 : </b><input type="range" min="1" max="5" value="1" /> 개
     </div>
   </body>
 </html>
