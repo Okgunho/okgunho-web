@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
+
+.ng-font {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+p {
+  font-size: 30px; /*  글자 크기 */
+}
