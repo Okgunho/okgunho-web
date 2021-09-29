@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
 
 .ng-font {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans KR", sans-serif; /* 글꼴 */
 }
 
 p {
   font-size: 30px; /*  글자 크기 */
+}
+
+p {
+  font-weight: bold; /* 글자 굵기  ex) nomal, lighter, bolder, bold, 100~900사이의 수치 */
 }
