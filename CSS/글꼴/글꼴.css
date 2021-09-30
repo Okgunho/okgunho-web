@@ -11,3 +11,11 @@ p {
 p {
   font-weight: bold; /* 글자 굵기  ex) nomal, lighter, bolder, bold, 100~900사이의 수치 */
 }
+
+p {
+  font-variant: normal small-caps; /* 작은 대문자 */
+}
+
+p {
+  font-style: normal; /* 글자 스타일 정하기 ex) normal, italic, oblique(기울어지게) */
+}
