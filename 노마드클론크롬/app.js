@@ -1,12 +1,4 @@
-const a = 5;
-const b = 2;
-
-let myName = "gunho";
-
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hello " + myName);
-
-myName = "okgunho"
-console.log("your new name is " + myName);
+const amIFat = null;
+let something;
+console.log(amIFat)
+console.log(something, amIFat)
