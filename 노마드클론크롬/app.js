@@ -1,5 +1,5 @@
-const a = 5;
-const b = 2;
+let a = 5;
+let b = 2;
 
 const myName = "gunho";
 
