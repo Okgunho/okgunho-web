@@ -116,6 +116,29 @@ function print({ alias, name, actor }) {
 print(ironMan);
 print(captainAmerica);
 
-  //--------------------------------
+//--------------------------------
 
-  오늘 쉴레
+// 객체 안에 함수 넣기
+
+const dog = {
+    name: '멍멍이',
+    sound: '멍멍!',
+    say: function say() {
+        console.log(this.sound);  //this는 자기가 속한 객체
+    }
+};
+
+dog.say();
+
+//함수 이름이 없어도 괜찮음
+
+const dog = {
+    name: '멍멍이',
+    sound: '멍멍!',
+    say: function () {
+        console.log(this.sound);
+    }
+};
+
+dog.say();
+
