@@ -25,3 +25,15 @@ objects.push({
 });
 
 console.log(objects);
+
+//---------------------------------
+
+const objects = [{ name: '멍멍이' }, { name: '야옹이' }];
+
+console.log(objects.length);    //2
+
+objects.push({
+    name: '멍뭉이'
+});
+
+console.log(objects.length);  //3     // 배열 크기 알아내기
