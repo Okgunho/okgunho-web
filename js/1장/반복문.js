@@ -36,3 +36,16 @@ let numbers = [10, 20, 30, 40, 50];
 for (let number of numbers) {
     console.log(number);
 }
+
+//--------------------------
+
+// 객체를 위한 반복문 for...in
+const doggy = {
+    name: '멍멍이',
+    sound: '멍멍',
+    age: 2
+};
+
+console.log(Object.entries(doggy));
+console.log(Object.keys(doggy));
+console.log(Object.values(doggy));
