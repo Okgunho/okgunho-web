@@ -16,3 +16,27 @@ app.get('/', function (req, res) {
 app.get('/about', function (req, res) {
     res.render('about.html')
 })
+
+var mysql = require('mysql');
+var pool = mysql.createPool({
+    connectionLimit: 10,
+    host: 'example.org',
+    user: 'bob',
+    password: 'secret',
+    dataase: 'my_db'
+});
+
+app.get('/db', function (req, res) {
+    pool.getConnection(function (err, connection) {
+        if (err) throw err;
+
+        connection.query('SELECT * FROM Test', function (error, result, fields) {
+            res.send(JSON.stringify(result));
+            console.log('results', result);
+
+            connection.release();
+
+            if (error) throw error;
+        });
+    });
+})

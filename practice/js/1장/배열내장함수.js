@@ -269,5 +269,23 @@ console.log(array.join(', ')); // 1, 2, 3, 4, 5
 
 // reduce
 
+const numbers = [1, 2, 3, 4, 5];
+let sum = array.reduce((accumulator, current) => accumulator + current, 0);
 
+console.log(sum);
 
+//여기서 accumulator 는 누적된 값을 의미합니다.
+
+//--------------------------------------------
+
+// 퀴즈
+
+// 숫자 배열이 주어졌을 때 10보다 큰 숫자의 갯수를 반환하는 함수를 만드세요.
+
+function countBiggerThanTen(numbers) {
+    const largerThan10 = numbers.filter((nums) => nums > 10);
+  return largerThen10.length;
+}
+
+const count = countBiggerThanTen([1, 2, 3, 5, 10, 20, 30, 40, 50, 60]);
+console.log(count); // 5
