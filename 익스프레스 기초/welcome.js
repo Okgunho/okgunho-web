@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 const PORT = 3000;
 
 const handleListen = () => {
-    console.log(`The server is running on the port ${PORT}`
+    console.log(`The server is running on the port ${PORT}`)
 }
 
 // make the server listen on port 3000
