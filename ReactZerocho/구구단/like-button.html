@@ -7,45 +7,45 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <title>구구단</title>
+    <title>Document</title>
   </head>
   <body>
     <div id="root"></div>
     <!-- 결과 : <div id="root"><button>Like</button></div> -->
     <script type="text/babel">
-      class GuGuDan extends React.Component {
+      class LikeButton extends React.Component {
         constructor(props) {
           super(props);
           this.state = {
-            first: Math.ceil(Math.random() * 9),
-            second: Math.ceil(Math.random() * 9),
-            value: "",
-            result: "",
+            liked: false,
           };
         }
 
         render() {
           return (
-            <div>
-              <div>
-                {this.state.first} 곱하기 {this.state.second}는?
-                <form>
-                  <input
-                    type="number"
-                    value={this.state.value}
-                    onChange={(e) => this.setState({ value: e.target.value })}
-                  />
-                  <button>입력!</button>
-                </form>
-                <div>{this.state.result}</div>
-              </div>
-            </div>
+            <button
+              type="submit"
+              onClick={() => {
+                this.setState({ liked: true });
+              }}
+            >
+              {this.state.liked === true ? "Liked" : "Like"}
+            </button>
+            // JSX ( JS + XML )
           );
         }
       }
     </script>
     <script type="text/babel">
-      ReactDOM.render(<GuGuDan />, document.querySelector("#root"));
+      ReactDOM.render(
+        <div>
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+          <LikeButton />
+        </div>,
+        document.querySelector("#root")
+      );
     </script>
   </body>
 </html>
